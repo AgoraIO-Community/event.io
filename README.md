@@ -2,25 +2,20 @@
 A real time streaming application for live events (sport games, music festivals, etc)
 
 ## Built with:
+
 Agora.io
 
 
 AWS RDS, Lambda, SNS, API Gateway, Cognito
 
 
-PostgreSQL
+PostgreSQL, Node.JS
 
 
-Node.JS
 
 Open source libraries used:
-Glide
 
-
-Volley
-
-
-ZXing
+Glide, Volley, ZXing
 
 Demonstration:
 
