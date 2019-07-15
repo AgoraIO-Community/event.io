@@ -3,13 +3,16 @@ A real time streaming application for live events (sport games, music festivals,
 
 ## Built with:
 
-Agora.io
+Agora.io (Java SDK)
 
 
 AWS RDS, Lambda, SNS, API Gateway, Cognito
 
 
-PostgreSQL, Node.JS
+PostgreSQL, Node.JS, Java
+
+
+Android Studio
 
 
 
