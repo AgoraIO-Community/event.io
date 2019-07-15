@@ -1,6 +1,27 @@
 # event.io
 A real time streaming application for live events (sport games, music festivals, etc)
 
+## Built with:
+Agora.io
+
+
+AWS RDS, Lambda, SNS, API Gateway, Cognito
+
+
+PostgreSQL
+
+
+Node.JS
+
+Open source libraries used:
+Glide
+
+
+Volley
+
+
+ZXing
+
 Demonstration:
 
 https://vimeo.com/348107148
@@ -29,14 +50,5 @@ I'm very happy with what I built in these past two weeks. I was extremely motiva
 If it were to gain traction, the first thing would definitely be increasing from a one man team. Then we would be finishing all the features for the app, modifying it for scalability, tweak the ui design a bit, network with a real company for its first launch, network some more, and then launching it on the appstore if a company decides to partner up.
 
 
-## Built with:
-Agora.io
-AWS RDS, Lambda, SNS, API Gateway, Cognito
-PostgreSQL
-Node.JS
 
-Open source libraries used:
-Glide
-Volley
-ZXing
 
