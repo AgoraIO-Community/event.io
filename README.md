@@ -1,6 +1,10 @@
 # event.io
 A real time streaming application for live events (sport games, music festivals, etc)
 
+Demonstration:
+
+https://vimeo.com/348107148
+
 ## Inspiration
 Two weeks ago I attended my first hackathon ever at Angelhack Silicon Valley 6/29. I didn't know what I wanted to do so I teamed up with a bunch of random people. We ended up using the Agora.io sdk with some AWS services but we were all unsure on deciding what our final product would be. My team left for the night and I stayed there coding. And  I was watching UFC fight night - Ngannou vs Santos because I missed it that afternoon in the hackathon and what I noticed how some people in the stadium can't see anything because of their terrible seats. Boom it connected like dots. I was using the agora SDK to build some app that I didn't see any future in with a team that ditched me lolol. So I scrapped everything we worked on that day and at 3 am in the middle of the night, I started brainstorming and creating the UI for event.io (I guess sleep deprivation gives you visions?).  And two weeks later here I am with the foundation of a  mobile app to improve a user's experience at live events.
 
