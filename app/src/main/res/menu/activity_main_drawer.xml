@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_search"
+            android:title="Search"/>
+
+        <item
+            android:id="@+id/nav_following"
+            android:title="Following"/>
+
+        <item
+            android:id="@+id/nav_food"
+            android:title="Avaliable Vendors" />
+
+        <item
+            android:id="@+id/nav_car"
+            android:title="Car Parker" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_signout"
+            android:title="Sign Out" />
+    </group>
+
+
+</menu>

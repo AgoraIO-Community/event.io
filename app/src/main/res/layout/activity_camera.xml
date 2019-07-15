@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/add_toolbar"
+        app:contentInsetStart="0dp"
+        android:background="@color/blackBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/xmark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/icon_white_x_mark"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="?attr/selectableItemBackground"/>
+
+            <ImageView
+                android:id="@+id/imageview_switch_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                android:layout_toStartOf="@+id/stream_button"
+                app:srcCompat="@drawable/icon_switch_camera" />
+
+            <TextView
+                android:id="@+id/stream_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:layout_alignParentEnd="true"
+                android:text="STREAM"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/whiteText"
+                android:background="@drawable/settings_pressed_color"/>
+
+            <TextView
+                android:id="@+id/activity_camera_camera_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/standardBlue"
+                android:text="camera name"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/xmark"
+                android:textStyle="bold"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorBlack"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/remote_video_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackBackground"
+        android:layout_below="@+id/add_toolbar">
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/local_video_view_container"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@color/dividerColor"
+        android:layout_below="@id/add_toolbar">
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@color/colorWhite">
+
+        <Button
+            android:id="@+id/button_park_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_background"
+            android:text="Park Car"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"/>
+
+        <Button
+            android:id="@+id/find_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_background"
+            android:text="Find Car"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/button_park_car"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            />
+
+        <TextView
+            android:id="@+id/car_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_park_car"
+            android:text="You're already at your car!"
+            android:textColor="@color/blackBackground"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:id="@+id/walking_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_distance"
+            app:srcCompat="@drawable/icon_walking"
+            android:layout_toRightOf="@+id/find_car"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

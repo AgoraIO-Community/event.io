@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackBackground"
+    android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/music_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/textview_nowplaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live @ Coachella 2018"
+            android:layout_below="@+id/music_layout"
+            android:textColor="@color/whiteText"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textview_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr Dre ft Eminem - Forgot About Dre"
+            android:layout_below="@+id/textview_nowplaying"
+            android:textColor="@color/whiteText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textview_upnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eminem - Lose Yourself"
+            android:layout_below="@+id/textview_artist"
+            android:textColor="@color/whiteText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/whiteText"/>
+
+
+
+        <TextView
+            android:id="@+id/textview_cameras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avaliable Cameras"
+            android:layout_below="@+id/textview_upnext"
+            android:textColor="@color/whiteText"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/music_camera_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_cameras"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="32dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textview_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following"
+            android:layout_below="@+id/music_camera_recycler"
+            android:textColor="@color/whiteText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/following_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_following"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="32dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</ScrollView>

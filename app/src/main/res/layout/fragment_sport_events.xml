@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackBackground"
+    android:scrollbars="none">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/score_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/match_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/standardBlue"/>
+
+            <TextView
+                android:id="@+id/textview_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/whiteText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4th Quarter"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_timer"
+                app:layout_constraintBottom_toBottomOf="@+id/match_image"
+                app:layout_constraintVertical_bias=".05"
+                android:textColor="@color/whiteText"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/left_team"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/textview_timer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="25dp" />
+
+            <ImageView
+                android:id="@+id/right_team"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintLeft_toRightOf="@+id/textview_timer"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/teamname_left"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Golden State Warriors"
+                android:gravity="center"
+                android:textColor="@color/whiteText"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/left_team"
+                app:layout_constraintStart_toStartOf="@+id/left_team"
+                app:layout_constraintTop_toBottomOf="@+id/left_team" />
+
+
+
+            <TextView
+                android:id="@+id/teamname_right"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Toronto Raptors"
+                android:textColor="@color/whiteText"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/right_team"
+                app:layout_constraintStart_toStartOf="@+id/right_team"
+                app:layout_constraintTop_toBottomOf="@+id/right_team"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="89"
+                android:textSize="25dp"
+                android:textColor="@color/whiteText"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/teamname_left"
+                app:layout_constraintStart_toStartOf="@+id/teamname_left"
+                app:layout_constraintTop_toBottomOf="@+id/teamname_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="86"
+                android:textColor="@color/whiteText"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/teamname_right"
+                app:layout_constraintStart_toStartOf="@+id/teamname_right"
+                app:layout_constraintTop_toBottomOf="@+id/teamname_right" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textview_cameras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avaliable Cameras"
+            android:layout_below="@+id/score_layout"
+            android:textColor="@color/whiteText"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sport_camera_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_cameras"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="32dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textview_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following"
+            android:layout_below="@+id/sport_camera_recycler"
+            android:textColor="@color/whiteText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/following_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_following"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="32dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+</ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

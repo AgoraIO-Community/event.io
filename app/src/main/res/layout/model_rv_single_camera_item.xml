@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_camera_rel_layout"
+    android:layout_width="100dp"
+    android:layout_height="160dp"
+    android:background="@color/blackBackground"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="6dp">
+
+    <ImageView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/navigationDrawerColor"/>
+
+    <TextView
+        android:id="@+id/camera_angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera 1"
+        android:textColor="@color/whiteText"
+        android:layout_below="@id/camera_preview"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp"
+        android:maxLines="1"/>
+
+
+
+
+    <TextView
+        android:id="@+id/number_viewers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.3K"
+        android:textColor="@color/whiteText"
+        android:layout_below="@id/camera_angle"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:layout_marginLeft="-8dp" />
+
+
+
+
+
+</RelativeLayout>

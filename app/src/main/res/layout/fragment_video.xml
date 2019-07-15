@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/blackBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fragment_video_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blackBackground"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fragment_video_white_x_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/icon_white_x_mark"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+
+
+            <TextView
+                android:id="@+id/fragment_video_toolbar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Camera 1"
+                android:textStyle="bold"
+                android:textColor="@color/whiteText"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/fragment_video_white_x_mark"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <VideoView
+        android:id="@+id/fragment_video_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_video_toolbar"/>
+
+    <ProgressBar
+        android:id="@+id/video_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>
