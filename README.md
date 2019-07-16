@@ -6,7 +6,7 @@ A real time streaming application for live events (sport games, music festivals,
 Agora.io (Java SDK)
 
 
-AWS RDS, Lambda, SNS, API Gateway, Cognito
+AWS RDS, Lambda, SNS, API Gateway, Cognito, S3
 
 
 PostgreSQL, Node.JS, Java
